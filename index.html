@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 
 <html lang="en">
@@ -31,3 +32,38 @@
 </body>
        
 </html>
+=======
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-box">
+        <h2> Admin Login</h2>
+        <input type = "email" id = "email" placeholder="Enter email">
+        <input type = "password" id = "password" placeholder="Enter password">
+        <button onclick="login()">Login</button>
+        </div>
+        <script>
+            function login() {
+                let email = document.getElementById('email').value;
+                let  password = document.getElementById('password').value;
+
+                if (email === "admin@gmail.com" && password === "admin1234") {
+                    alert("Login success");
+                    window.location.href = "admin.html";
+                
+                } else {
+                    alert("Wrong email or password");
+                }
+            }
+        </script>
+</body>
+       
+</html>
+>>>>>>> dd74f3bd35cea863f85e2a7db42d74975df17f76
